@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOTICS 101 Club Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://i.pinimg.com/736x/63/bf/ac/63bfac918e0f6fee071d139974052945.jpg" type="image/x-icon">
+    <style>
+        body {
+            background: url('https://i.pinimg.com/736x/3c/33/46/3c334658bf58cb09c3b1e224030f603f.jpg') no-repeat center center fixed;
+            background-size: cover; 
+            color: #fc66b3; 
+            font-family: 'Roboto Mono', sans-serif;
+            overflow-x: hidden;
+        }
+        .form-container {
+            background-color: #fadeec;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 25px rgba(255, 163, 210);
+            max-width: 700px;
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid #fc66b3; 
+        }
+        .form-heading {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #fc66b3; 
+            margin-bottom: 30px;
+            text-shadow: 0px 0px 10px rgba(255, 163, 210);
+        }
+        label {
+            color: #fc66b3; 
+            font-size: 14px;
+        }
+        input, select, textarea {
+            background-color: #ffebf6; 
+            color: #ff4081; 
+            border: 1px solid #f07fbd; 
+            border-radius: 8px;
+            padding: 10px;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #ff66b2; 
+            font-family: 'Roboto Mono', sans-serif;
+        }
+        .form-check-label, .form-control, .form-select {
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 12px;
+        }
+        .btn-primary {
+            background-color: #fc66b3; 
+            border-color: #fc66b3; 
+            color: #fff; 
+            font-family: 'Roboto Mono', sans-serif;
+            width: 100%;
+        }
+        .btn-primary:hover {
+            background-color: #ffebf6;
+            color: #fc66b3; 
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            border-color: #fc66b3; 
+            box-shadow: 0px 0px 10px rgba(255, 105, 180, 0.6); 
+        }
+
+        #statement {
+            background-color: #ffebf6; 
+            width: 100%; 
+            height: 250px; 
+            box-sizing: border-box; 
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-heading">✮ Welcome to Robotics 101 ⋆˙</h1>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">── Please enter your name .ִ𖤐</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="age" class="form-label">── Please enter your age .ִ𖤐</label>
+                    <input type="number" id="age" class="form-control" placeholder="Enter your age" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">── Please enter an e-mail .ִ𖤐</label>
+                <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">── Please enter your phone number .ִ𖤐</label>
+                <input type="tel" id="phone" class="form-control" placeholder="123-456-7890" required>
+            </div>
+<br><br>
+            <div class="mb-3">
+                <label class="form-label">★ What kind of are you interested in learning? ᯓ</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="programming" value="programming">
+                    <label class="form-check-label" for="programming">Programming</label>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="electronics" value="electronics">
+                    <label class="form-check-label" for="electronics">Electronics</label>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="mechanical-design" value="mechanical-design">
+                    <label class="form-check-label" for="mechanical-design">Mechanical Design</label>
+                </div>
+<br><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">★ How experienced are you? ᯓ</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experienceLevel" id="beginner" value="beginner" required>
+                    <label class="form-check-label" for="beginner">Beginner</label>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experienceLevel" id="intermediate" value="intermediate" required>
+                    <label class="form-check-label" for="intermediate">Intermediate</label>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="experienceLevel" id="advanced" value="advanced" required>
+                    <label class="form-check-label" for="advanced">Advanced</label>
+                </div>
+<br><br>
+            </div>
+            <div class="mb-3">
+                <label for="project" class="form-label">⋆.˚ What are your preferred robotics project? ⭑.ᐟ</label>
+                <select id="project" class="form-select">
+                    <option selected disabled>Choose a project...</option>
+                    
+                    <option value="robot-arm">Robot Arm</option>
+                    
+                    <option value="drone">Drone</option>
+                    
+                    <option value="line-follower">Turret Detector</option>
+                </select>
+            </div>
+<br><br>
+            <div class="mb-3">
+                <label for="statement" class="form-label">⭑⚝ Statement of Interest ๋࣭ </label>
+                <textarea id="statement" class="form-control" rows="10" placeholder="Please state why do you want to join Robotics 101."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
